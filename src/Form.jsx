@@ -68,7 +68,7 @@ export default function Form() {
     <div className="card success">
       <div className="check">✓</div>
       <h2>Message sent!</h2>
-      <p>Thanks for reaching out. We'll be in touch soon.</p>
+      <p>Thanks for reaching out. You will be able to see the data on sheet.</p>
       <button onClick={reset} className="link-btn">Submit another response</button>
     </div>
   )
@@ -76,8 +76,8 @@ export default function Form() {
   return (
     <div className="card">
       <div className="header">
-        <h1>Get in touch</h1>
-        <p>Fill in your details and we'll get back to you.</p>
+        <h1>Sheet - Form Lead Demo</h1>
+        <p>Fill in your details and try to check the google shet to confirm the updates.</p>
       </div>
 
       <form onSubmit={handleSubmit} noValidate>
