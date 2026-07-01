@@ -1,0 +1,67 @@
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.header { margin-bottom: 1.5rem; }
+.header h1 { font-size: 20px; font-weight: 600; color: #1a1a1a; margin-bottom: 4px; }
+.header p { font-size: 14px; color: #888; }
+
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.field { margin-bottom: 1.1rem; }
+.field label { display: block; font-size: 13px; font-weight: 500; color: #555; margin-bottom: 5px; }
+
+input[type=text], input[type=email], input[type=tel], textarea {
+  width: 100%; padding: 9px 12px; font-size: 15px;
+  border: 1px solid #e0e0e0; border-radius: 8px;
+  color: #1a1a1a; background: #fafafa;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  font-family: inherit;
+}
+input:focus, textarea:focus {
+  outline: none; border-color: #4f7ef8;
+  box-shadow: 0 0 0 3px rgba(79,126,248,0.12);
+}
+input.error { border-color: #e24b4a; }
+textarea { resize: vertical; }
+
+.err-msg { font-size: 12px; color: #e24b4a; margin-top: 3px; display: block; }
+
+.honey { display: none; }
+
+.checkbox-row {
+  display: flex; align-items: center; gap: 8px; margin-bottom: 1.25rem;
+}
+.checkbox-row label { font-size: 13px; color: #555; margin: 0; }
+
+.submit-btn {
+  width: 100%; padding: 11px; font-size: 15px; font-weight: 600;
+  background: #4f7ef8; color: #fff; border: none; border-radius: 8px;
+  cursor: pointer; transition: background 0.15s, transform 0.1s;
+  font-family: inherit;
+}
+.submit-btn:hover { background: #3a68e0; }
+.submit-btn:active { transform: scale(0.99); }
+.submit-btn:disabled { opacity: 0.55; cursor: not-allowed; }
+
+.success {
+  text-align: center; padding: 3rem 2rem;
+}
+.check {
+  width: 56px; height: 56px; border-radius: 50%;
+  background: #e8f5e9; color: #2e7d32;
+  font-size: 24px; display: flex; align-items: center;
+  justify-content: center; margin: 0 auto 1.25rem;
+}
+.success h2 { font-size: 20px; font-weight: 600; margin-bottom: 8px; color: #1a1a1a; }
+.success p { font-size: 14px; color: #888; }
+.link-btn {
+  margin-top: 1.25rem; background: none; border: none;
+  color: #4f7ef8; font-size: 14px; cursor: pointer;
+  text-decoration: underline; font-family: inherit;
+}
